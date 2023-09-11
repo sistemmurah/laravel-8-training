@@ -19,4 +19,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/vehicle', [App\Http\Controllers\VehicleController::class, 'index'])->name('vehicle.index');
+
+Route::get('/vehicle/tambah', [App\Http\Controllers\VehicleController::class, 'tambah'])->name('vehicle.tambah');
